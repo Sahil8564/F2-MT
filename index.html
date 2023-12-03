@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./universalStyles.css">
+    <link rel="stylesheet" href="./functionalStyles.css">
+</head>
+<body>
+    <main>
+        <h3>Multiple Timers App</h3>
+        <div id="timer-card" class="timer-card">
+            <span>Set Time :</span>
+            <span id="timer-container">
+                <input id="hour" type="number" min="0" max="24" placeholder="hh">
+                <input id="minute" type="number" min="0" max="60" placeholder="mm">
+                <input id="seconds" type="number" min="0" max="60" placeholder="ss">
+            </span>
+            <button id="set-btn">Set</button>
+        </div>
+
+
+        <!-- here we have the dynamically created timers -->
+        <section>
+            <h4 id="current-timers">Current Timers</h3>
+            <div id="active-timers-container">
+                <span id="no-timers-display-msg">You have no timers currently</span>
+            </div>
+        </section>
+        <audio id="audio-file">
+            <source src="Audio/Arjun-Velly-Ringtone-Download.mp3" />
+        </audio>
+    </main>
+
+    <!-- Link external js files -->
+    <script src="./getElements.js"></script>
+    <script src="./dynamicFunctions.js"></script>
+</body>
+</html>
